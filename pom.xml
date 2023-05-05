@@ -16,6 +16,7 @@
     <description>train-ticketing-system</description>
     <modules>
         <module>member</module>
+        <module>common</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -24,6 +25,7 @@
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -42,6 +44,12 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>5.8.11</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yoliang</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
